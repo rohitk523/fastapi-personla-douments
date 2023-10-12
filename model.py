@@ -5,20 +5,20 @@ from database import Base
 
 
 class Documentinfo(Base):
-    __tablename__ = "Documentinfo"
+    __tablename__ = "documentinfo"
     
     id = Column(Integer, primary_key=True, index=True)
-    User = Column(String)
-    Aadhar = Column(String)
-    Pan = Column(String)
-    Phone = Column(Integer)
+    userid = Column(String)
+    aadhar = Column(String)
+    pan = Column(String)
+    phone = Column(Integer)
     
 class Docs(BaseModel):
 	id: int
-	User: str
-	Aadhar: str
-	Pan: str
-	Phone: int
+	user: str
+	aadhar: str
+	pan: str
+	phone: int
 
 # allDocuments = [{
 #   "User": "Rohit",

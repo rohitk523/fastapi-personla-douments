@@ -18,7 +18,7 @@ def get_db():
 
 @app.post('/Add_document')
 def create_user(db: Annotated[Session,Depends(get_db)],docsinfo: Docs ):
-    db_doc = Documentinfo(User = docsinfo.User, Aadhar = docsinfo.Aadhar, Pan = docsinfo.Pan, Phone = docsinfo.Phone)
+    db_doc = Documentinfo(userid = docsinfo.user, aadhar = docsinfo.aadhar, pan = docsinfo.pan, phone = docsinfo.phone)
     db.add(db_doc)
     db.commit()
     db.refresh(db_doc)
