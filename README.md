@@ -1,5 +1,5 @@
 # fastapi-personal-douments
-this is for postgres database
+# this is for postgres database
 # SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
 # SQLALCHEMY_DATABASE_URL = "postgresql://postgres:test1234@localhost/PersonalDatabase"
 
@@ -15,3 +15,9 @@ this is for postgres database
 
 # ⌃G Go to Line...
 # ⌃+a start of the line, ⌃+e end of the line
+
+Next task:
+
+# seperate user and documents to create jwt auth tokens
+# add users table in models
+# Also use alembic 
