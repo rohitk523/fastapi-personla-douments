@@ -1,5 +1,6 @@
 from fastapi import FastAPI,Depends
-from model import Documentinfo, Docs
+from model import Documentinfo
+from schema import Docs
 from database import engine, SessionLocal
 import model
 from sqlalchemy.orm import Session
